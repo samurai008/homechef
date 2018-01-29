@@ -19,6 +19,7 @@ import { BlankPage } from '../pages/blank/blank';
 import { StaticTextPage } from '../pages/static-text/static-text';
 
 import { AddToCartComponent } from '../components/add-to-cart/add-to-cart';
+import { OrderSummaryComponent } from '../components/order-summary/order-summary';
 import { AddressBookComponent } from '../components/address-book/address-book';
 
 import { UserStorageProvider } from '../providers/user-storage/user-storage';
@@ -30,7 +31,7 @@ import { ProfilePage } from '../pages/profile/profile';
 export class MyApp implements OnInit {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = EnterPage;
+  rootPage: any = PaymentPage;
   username: string = 'John Doe';
 
   pages: Array<{title: string, component: any}>;

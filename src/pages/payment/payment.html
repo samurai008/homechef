@@ -12,6 +12,9 @@
 
 
 <ion-content padding>
+
+    <order-summary></order-summary>
+
     <ion-list radio-group>
         <ion-list-header class="cust-list-header">
             select an address
@@ -47,7 +50,7 @@
         </ion-item>
     </ion-list>
     <div style="display:flex;justify-content:center;margin-bottom: 25px;">
-        <button class="btn-dark" (click)="addAddressModal()">add new address<ion-icon name="add"></ion-icon></button>
+        <button ion-button block (click)="addAddressModal()" icon-end>add new address<ion-icon name="add"></ion-icon></button>
     </div>
 
     <ion-list radio-group>
@@ -72,8 +75,8 @@
             <ion-radio value="second"></ion-radio>
         </ion-item>
     </ion-list>
-    <div style="display:flex;justify-content:center;">
-        <button class="btn-dark">continue to pay<ion-icon name="arrow-forward"></ion-icon></button>
+    <div style="display:flex;justify-content:center;margin-bottom: 10%;">
+        <button ion-button block icon-end>continue to pay<ion-icon name="arrow-forward"></ion-icon></button>
     </div>
 
 </ion-content>

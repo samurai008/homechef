@@ -11,4 +11,9 @@ page-payment {
             font-weight: bolder;
         }
     }
+
+    ion-item[class*="item-"], ion-content button {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.1rem;
+    }
 }

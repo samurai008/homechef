@@ -30,6 +30,7 @@ import { PaymentMethodComponent } from '../components/payment-method/payment-met
 import { AddressBookComponent } from '../components/address-book/address-book';
 import { AddressListComponent } from '../components/address-list/address-list';
 import { AddressInputFormComponent } from '../components/address-input-form/address-input-form';
+import { OrderSummaryComponent } from '../components/order-summary/order-summary';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -68,7 +69,8 @@ import { AddressProvider } from '../providers/address/address';
     PaymentMethodComponent,
     AddressBookComponent,
     AddressListComponent, 
-    AddressInputFormComponent 
+    AddressInputFormComponent,
+    OrderSummaryComponent 
   ],
   imports: [
     BrowserModule,
@@ -103,7 +105,8 @@ import { AddressProvider } from '../providers/address/address';
     ImageSliderComponent,
     LocationComponent,
     AddressListComponent,
-    AddressInputFormComponent 
+    AddressInputFormComponent, 
+    OrderSummaryComponent 
   ],
   providers: [
     StatusBar,

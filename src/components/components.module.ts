@@ -7,6 +7,7 @@ import { PaymentMethodComponent } from './payment-method/payment-method';
 import { AddressBookComponent } from './address-book/address-book';
 import { AddressListComponent } from './address-list/address-list';
 import { AddressInputFormComponent } from './address-input-form/address-input-form';
+import { OrderSummaryComponent } from './order-summary/order-summary';
 @NgModule({
 	declarations: [NavBarComponent,
     AddToCartComponent,
@@ -16,7 +17,8 @@ import { AddressInputFormComponent } from './address-input-form/address-input-fo
     AddressBookComponent,
     AddressBookComponent,
     AddressListComponent,
-    AddressInputFormComponent],
+    AddressInputFormComponent,
+    OrderSummaryComponent],
 	imports: [],
 	exports: [NavBarComponent,
     AddToCartComponent,
@@ -26,6 +28,7 @@ import { AddressInputFormComponent } from './address-input-form/address-input-fo
     AddressBookComponent,
     AddressBookComponent,
     AddressListComponent,
-    AddressInputFormComponent]
+    AddressInputFormComponent,
+    OrderSummaryComponent]
 })
 export class ComponentsModule {}

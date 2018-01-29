@@ -1,0 +1,26 @@
+order-summary {
+
+    .order-table {
+        ion-row:first-child {
+            ion-col {
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+            border-bottom: 1px solid #{map-get($map: $bgcolors, $key: light)};
+            margin-bottom: 1.5rem;
+        }
+
+        ion-row {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            &:not(:first-child) {
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #{map-get($map: $bgcolors, $key: light)};
+            }
+            &:last-child {
+                margin-bottom: 2rem;
+                border-bottom: none;
+            }
+        }
+    }
+}
