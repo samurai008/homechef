@@ -1,0 +1,16 @@
+shipping-address {
+
+    .print-address {
+        div {
+            &:not(:first-child) {
+                margin: 2.5rem 0;
+            }
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            span {
+                background: #{map-get($map: $bgcolors, $key: light)};
+                padding: 1rem 0.5rem;
+            }
+        }
+    }
+}

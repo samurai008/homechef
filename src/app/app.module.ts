@@ -31,6 +31,7 @@ import { AddressBookComponent } from '../components/address-book/address-book';
 import { AddressListComponent } from '../components/address-list/address-list';
 import { AddressInputFormComponent } from '../components/address-input-form/address-input-form';
 import { OrderSummaryComponent } from '../components/order-summary/order-summary';
+import { ShippingAddressComponent } from '../components/shipping-address/shipping-address';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -70,7 +71,8 @@ import { AddressProvider } from '../providers/address/address';
     AddressBookComponent,
     AddressListComponent, 
     AddressInputFormComponent,
-    OrderSummaryComponent 
+    OrderSummaryComponent, 
+    ShippingAddressComponent, 
   ],
   imports: [
     BrowserModule,
@@ -99,6 +101,7 @@ import { AddressProvider } from '../providers/address/address';
     ProfilePage,
     StaticTextPage,
 
+    ShippingAddressComponent, 
     AddressBookComponent,
     NavBarComponent,
     AddToCartComponent,

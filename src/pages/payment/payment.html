@@ -15,68 +15,22 @@
 
     <order-summary></order-summary>
 
-    <ion-list radio-group>
-        <ion-list-header class="cust-list-header">
-            select an address
-        </ion-list-header>
-
-        <ion-item>
-            <ion-label>
-                <div>
-                    221B, Baker Street
-                </div>
-                <div>
-                    London
-                </div>
-                <div>
-                    122929
-                </div>
-            </ion-label>
-            <ion-radio value="first"></ion-radio>
-        </ion-item>
-        <ion-item>
-            <ion-label>
-                <div>
-                    123, Tacky Town
-                </div>
-                <div>
-                    Missisipi
-                </div>
-                <div>
-                    99898
-                </div>
-            </ion-label>
-            <ion-radio value="second"></ion-radio>
-        </ion-item>
-    </ion-list>
-    <div style="display:flex;justify-content:center;margin-bottom: 25px;">
-        <button ion-button block (click)="addAddressModal()" icon-end>add new address<ion-icon name="add"></ion-icon></button>
-    </div>
+    <shipping-address></shipping-address>
 
     <ion-list radio-group>
-        <ion-list-header class="cust-list-header">
-            select payment method
-        </ion-list-header>
-
         <ion-item>
-            <ion-label>
-                <div>
-                    Credit Card
-                </div>
+            <ion-label class="cust-list-header">
+                select payment method
             </ion-label>
-            <ion-radio value="first"></ion-radio>
+            <ion-select [(ngModel)]="paymentMethod" interface="popover">
+                <ion-option>Credit Card</ion-option>
+                <ion-option>Netbanking</ion-option>
+            </ion-select>
         </ion-item>
         <ion-item>
-            <ion-label>
-                <div>
-                    COD
-                </div>
-            </ion-label>
-            <ion-radio value="second"></ion-radio>
+            <button ion-button block (click)="getPaymentMethod()">Continue</button>
         </ion-item>
     </ion-list>
-    <div style="display:flex;justify-content:center;margin-bottom: 10%;">
-        <button ion-button block icon-end>continue to pay<ion-icon name="arrow-forward"></ion-icon></button>
-    </div>
+
 
 </ion-content>
