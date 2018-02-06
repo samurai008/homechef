@@ -24,6 +24,7 @@ import { AddressBookComponent } from '../components/address-book/address-book';
 
 import { UserStorageProvider } from '../providers/user-storage/user-storage';
 import { ProfilePage } from '../pages/profile/profile';
+import { AddressListComponent } from '../components/address-list/address-list';
 
 @Component({
   templateUrl: 'app.html',
@@ -49,6 +50,7 @@ export class MyApp implements OnInit {
       { title: 'Menu', component: HomePage },
       { title: 'Orders', component: OrderListPage },
       { title: 'Profile', component: ProfilePage},
+      { title: 'Address Book', component: AddressBookComponent},
       { title: 'About Us', component: StaticTextPage},
       { title: 'Terms of Use', component: StaticTextPage},
       { title: 'Privacy Policy', component: StaticTextPage},

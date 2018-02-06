@@ -1,4 +1,51 @@
 <!-- Generated template for the AddressInputFormComponent component -->
-<div>
-  {{text}}
+<div class="content">
+  <h3>add new address</h3>
+
+  <form>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div class="input">
+                        <ion-icon name="md-home"></ion-icon>
+                        <input type="text" 
+                               placeholder="Address Line 1" />
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div class="input">
+                        <ion-icon name="md-home"></ion-icon>
+                        <input type="text"
+                               placeholder="Address Line 2" />
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div class="input">
+                        <ion-icon name="md-map"></ion-icon>
+                        <input type="text"
+                               placeholder="City" />
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="input">
+                        <ion-icon name="md-pin"></ion-icon>
+                        <input type="text"
+                               placeholder="Pincode" />
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <button type="submit" 
+                                 class="btn-dark w-100">
+                       save the address
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+  </form>
 </div>

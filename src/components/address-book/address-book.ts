@@ -13,6 +13,8 @@ import { AddressProvider } from '../../providers/address/address';
 })
 export class AddressBookComponent {
   addressList: any;
+  hideList: boolean = false;
+  title: string = "Address Book";
 
   constructor(
     private addressService: AddressProvider
@@ -26,8 +28,13 @@ export class AddressBookComponent {
       (err) => console.log(err),
       () => {
         console.log('getAddressList() completed!');
+        console.log(this.addressList)
       }
     );
+  }
+
+  addressInputClick() {
+    this.hideList = !this.hideList;
   }
 
 }

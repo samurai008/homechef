@@ -1,14 +1,19 @@
 <!-- Generated template for the AddressListComponent component -->
-<div>
-  <ion-list inset>
-    <ion-list-header>
-      <ion-icon name="list-box"
-        item-end></ion-icon>
-      list of addresses
-    </ion-list-header>
-    
+<div class="content">
+  <h3>
+    <div>
+    list of address
+    </div>
+    <small>(click to expand)</small>
+  </h3>
+  <ion-list *ngIf="hideList" radio-group inset [(ngModel)]="defaultShippingAddress">
     <ion-item *ngFor="let address of addressList">
-      abcd
+      <ion-label>
+        {{address.address}}<br>
+        {{address.city}} {{address.pin}}
+        {{address.default}}
+      </ion-label>
+      <ion-radio value={{address.id}} [checked]="address.default"></ion-radio>
     </ion-item>
   </ion-list>
 </div>

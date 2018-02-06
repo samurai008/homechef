@@ -16,7 +16,7 @@ export class AddressInputFormComponent {
 
   constructor() {
     console.log('Hello AddressInputFormComponent Component');
-    this.text = 'Hello World';
+    this.text = 'Address Input Form';
   }
 
 }

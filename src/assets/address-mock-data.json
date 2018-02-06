@@ -3,18 +3,21 @@
         "id": 1,
         "address": "221B, Baker Street",
         "city": "London",
-        "pin": "110034"
+        "pin": "110034",
+        "default": false
     },
     {
         "id": 2,
         "address": "198, Pattanagere",
         "city": "Bangalore",
-        "pin": "122034"
+        "pin": "122034",
+        "default": true
     },
     {
         "id": 3,
         "address": "800, Sector 20",
         "city": "Gugraon",
-        "pin": "12004"
+        "pin": "12004",
+        "default": false
     }
 ]

@@ -1,3 +1,14 @@
 <!-- Generated template for the AddressBookComponent component -->
-<address-list [addressList]="addressList"></address-list>
-<address-input-form></address-input-form>
+<ion-header>
+
+  <nav-bar [title]="title" [hamburger]="true" [showTitle]="true"></nav-bar>
+
+</ion-header>
+
+<ion-content no-padding>
+    <address-list (click)="addressInputClick()"
+                 [addressList]="addressList" 
+                 [hideList]="hideList">
+    </address-list>
+    <address-input-form></address-input-form>
+</ion-content>
