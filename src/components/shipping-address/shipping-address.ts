@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
+import { AddressBookComponent } from '../address-book/address-book';
 
 /**
  * Generated class for the ShippingAddressComponent component.
@@ -14,9 +16,12 @@ export class ShippingAddressComponent {
 
   text: string;
 
-  constructor() {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('Hello ShippingAddressComponent Component');
     this.text = 'Hello World';
   }
 
+  openAddressBookComponent() {
+    this.navCtrl.push(AddressBookComponent);
+  }
 }
